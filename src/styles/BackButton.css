@@ -1,0 +1,48 @@
+.navback-btn {
+  position: absolute;
+  top: 115px;
+  left: 70px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 20;
+}
+
+/* Icon styling */
+.navback-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) contrast(1.2);
+}
+
+/* Hover effect */
+.navback-btn:hover {
+  transform: translateX(-3px) scale(1.05);
+  filter: brightness(0.2);
+}
+
+/* Responsive fixes */
+@media (max-width: 1024px) {
+  .navback-btn {
+    top: 100px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navback-btn {
+    top: 90px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+  }
+}
