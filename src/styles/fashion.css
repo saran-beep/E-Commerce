@@ -1,0 +1,128 @@
+/* ======================================
+   MAIN WRAPPER
+====================================== */
+.fashion-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* ======================================
+   BANNER
+====================================== */
+.fashion-banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ======================================
+   TITLE
+====================================== */
+.fashion-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 25px 0 20px;
+  color: #4a3b2f;
+}
+
+/* ======================================
+   GRID AUTO-RESPONSIVE
+====================================== */
+.fashion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-items: center;
+}
+
+/* ======================================
+   CARD
+====================================== */
+.fashion-card {
+  text-align: center;
+}
+
+/* PERFECT CIRCLE IMAGE WRAPPER */
+.fashion-img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #cfcac3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE – no distortion, no cropping */
+.fashion-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fashion-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* =======================================================
+   📱 TABLET (max-width: 1024px)
+======================================================= */
+@media (max-width: 1024px) {
+  .fashion-img-box {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* =======================================================
+   📱 MOBILE LARGE (max-width: 768px)
+======================================================= */
+@media (max-width: 768px) {
+
+  .fashion-title {
+    font-size: 20px;
+  }
+
+  .fashion-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 20px;
+  }
+
+  .fashion-img-box {
+    width: 110px;
+    height: 110px;
+  }
+
+  .fashion-card p {
+    font-size: 14px;
+  }
+}
+
+/* =======================================================
+   📱 MOBILE SMALL (max-width: 480px)
+======================================================= */
+@media (max-width: 480px) {
+
+  .fashion-title {
+    font-size: 18px;
+  }
+
+  .fashion-grid {
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    gap: 15px;
+  }
+
+  .fashion-img-box {
+    width: 85px;
+    height: 85px;
+  }
+
+  .fashion-card p {
+    font-size: 12px;
+  }
+}

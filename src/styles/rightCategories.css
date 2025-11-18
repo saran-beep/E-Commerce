@@ -1,0 +1,342 @@
+.right-container {
+  width: 700px;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* Titles */
+.popular-section h3,
+.recent-section h3,
+.tried-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+/* Popular grid */
+.popular-grid {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.popular-card { width: 200px; }
+.popular-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Recently viewed horizontal scroll */
+.recent-section { margin-top: 12px; margin-bottom: 30px; }
+.recent-scroll {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  align-items: flex-start;
+  scrollbar-width: none;
+}
+.recent-card { width: 200px; flex: 0 0 auto; }
+.recent-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.recent-card p { margin: 8px 0 0 0; font-weight: 500; }
+
+/* See all card */
+.see-all-card { width: 52px; text-align: center; flex: 0 0 auto; }
+.see-all-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(186, 184, 184, 0.64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* Tried grid */
+.tried-grid { display: flex; gap: 44px; margin-top: 12px; }
+.tried-card { width: 150px; text-align: center; }
+.tried-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.tried-card p { margin-top: 8px; font-weight: 500; }
+
+/* Placeholder pages for Home & Fashion */
+.right-placeholder {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #222;
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+/* ========== DESKTOP DEFAULT ========== */
+/* (Your current desktop code stays as is) */
+
+
+
+/* ===============================
+   📌 1280px
+   =============================== */
+@media (max-width: 1280px) {
+  .right-container {
+    width: 650px;
+  }
+}
+
+
+
+/* ===============================
+   📌 1024px – Tablets / Small Laptop
+   =============================== */
+@media (max-width: 1024px) {
+  .right-container {
+    width: 100%;
+  }
+
+  .popular-grid {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .recent-scroll {
+    padding-bottom: 10px;
+  }
+
+  .tried-grid {
+    gap: 25px;
+  }
+}
+
+
+
+/* ===============================
+   📌 768px – Mid Tablets
+   =============================== */
+@media (max-width: 768px) {
+  .popular-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popular-card {
+    width: 45%;
+  }
+
+  .popular-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recent-card {
+    width: 160px;
+  }
+
+  .recent-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .see-all-card {
+    width: 40px;
+  }
+}
+
+
+
+/* ===============================
+   📌 600px – Big Phones
+   =============================== */
+@media (max-width: 600px) {
+  .tried-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tried-card {
+    width: 120px;
+  }
+
+  .tried-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+/* ===============================
+   📌 480px – Small Phones
+   =============================== */
+@media (max-width: 480px) {
+  .popular-card {
+    width: 90%;
+  }
+
+  .recent-card {
+    width: 140px;
+  }
+
+  .recent-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .see-all-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+/* new desing */
+
+/* -----------------------------------------
+   GLOBAL RESPONSIVE FIXES
+----------------------------------------- */
+
+/* Base layout cleanup */
+.category-layout {
+  display: flex;
+  gap: 30px;
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
+/* Left container default */
+.left-container {
+  width: 400px;
+  background: rgba(212, 211, 210, 0.71);
+  border-radius: 12px;
+  position: relative;
+  padding: 16px;
+  height: auto;
+}
+
+/* -----------------------------------------
+   1280px
+----------------------------------------- */
+@media (max-width: 1280px) {
+  .category-layout {
+    margin-left: 40px;
+  }
+
+  .right-container {
+    width: 650px;
+  }
+}
+
+/* -----------------------------------------
+   1024px — Tablets & Small Laptops
+----------------------------------------- */
+@media (max-width: 1024px) {
+  .category-layout {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .subheader-route {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  /* Left becomes horizontal scroll */
+  .left-container {
+    width: 100%;
+    height: 220px;
+  }
+
+  .left-scroll {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 200px;
+  }
+
+  .left-card {
+    min-width: 180px;
+    height: 180px;
+    margin-right: 20px;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------
+   768px — Tablets Vertical
+----------------------------------------- */
+@media (max-width: 768px) {
+  .subheader-route {
+    left: 20px;
+    top: 10px;
+  }
+
+  .category-layout {
+    margin-top: 50px;
+  }
+
+  .popular-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popular-card {
+    width: 45%;
+  }
+}
+
+/* -----------------------------------------
+   600px — Large Phones
+----------------------------------------- */
+@media (max-width: 600px) {
+  .left-card {
+    min-width: 150px;
+    height: 160px;
+  }
+
+  .popular-card {
+    width: 90%;
+  }
+
+  .recent-card {
+    width: 140px;
+  }
+}
+
+/* -----------------------------------------
+   480px — Small Phones
+----------------------------------------- */
+@media (max-width: 480px) {
+  .popular-img,
+  .recent-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .see-all-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}

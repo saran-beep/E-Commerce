@@ -55,6 +55,9 @@ header {
   transform: scale(1.05);
 }
 
+.logoimg{
+  width: 100px;
+}
 /* ======================= Location ======================= */
 .location {
   display: flex;

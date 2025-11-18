@@ -1,3 +1,8 @@
+import speaker1 from "../assets/speaker1.jpeg";
+import speaker2 from "../assets/speaker2.jpeg";
+import speaker3 from "../assets/speaker3.jpeg";
+import speaker4 from "../assets/speaker4.jpeg";
+
 const productData = [
   {
     id: 1,
@@ -5,7 +10,7 @@ const productData = [
     desc: "220W Signature Sound, Dynamic Pixels",
     price: "₹18,990",
     mrp: "₹44,990",
-    img: "/speaker1.jpeg",
+    img: speaker1,
     color: "#007bff",
   },
   {
@@ -14,7 +19,7 @@ const productData = [
     desc: "240W Powerful Bass, LED Lights",
     price: "₹25,999",
     mrp: "₹39,999",
-    img: "/speaker2.jpeg",
+    img: speaker2,
     color: "#ff6b00",
   },
   {
@@ -23,7 +28,7 @@ const productData = [
     desc: "Mega Bass, Party Connect, 25 Hours Playtime",
     price: "₹32,999",
     mrp: "₹49,990",
-    img: "/speaker3.jpeg",
+    img: speaker3,
     color: "#1e90ff",
   },
   {
@@ -32,7 +37,7 @@ const productData = [
     desc: "160W, Bluetooth, Wireless Mic",
     price: "₹17,499",
     mrp: "₹29,999",
-    img: "/speaker4.jpeg",
+    img: speaker4,
     color: "#00b894",
   },
 ];

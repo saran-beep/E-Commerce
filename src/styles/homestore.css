@@ -1,0 +1,189 @@
+.home-wrapper {
+  width: 100%;
+}
+
+.home-banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.home-section-title {
+  font-size: 20px;
+  margin: 25px 0 15px;
+  font-weight: 600;
+  color: #4a3b2f;
+}
+
+/* EXACT CIRCLE GRID LIKE FIGMA */
+.home-circle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Circle Cards */
+.home-circle-card {
+  text-align: center;
+}
+
+.home-circle-card img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d8d2c8;
+  padding: 5px;
+  background: #fff;
+}
+
+.home-circle-card p {
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.2;
+}
+
+/* ============================
+   MAIN WRAPPER
+============================ */
+.home-wrapper {
+  width: 100%;
+}
+
+/* ============================
+   BANNER
+============================ */
+.home-banner {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+
+/* ============================
+   SECTION TITLE
+============================ */
+.home-section-title {
+  font-size: 22px;
+  margin: 30px 0 18px;
+  font-weight: 600;
+  color: #4a3b2f;
+}
+
+
+/* ============================
+   CIRCLE GRID (DESKTOP)
+============================ */
+.home-circle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  margin-bottom: 45px;
+}
+
+
+/* ============================
+   CIRCLE CARD
+============================ */
+.home-circle-card {
+  text-align: center;
+}
+
+.home-circle-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d8d2c8;
+  padding: 6px;
+  background: #fff;
+}
+
+.home-circle-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+
+
+/* ===============================================
+   📱 TABLET VERSION (max-width: 1024px)
+================================================ */
+@media (max-width: 1024px) {
+
+  .home-section-title {
+    font-size: 20px;
+    margin: 25px 0 15px;
+  }
+
+  .home-circle-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+
+  .home-circle-card img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .home-circle-card p {
+    font-size: 13px;
+  }
+}
+
+
+
+/* ===============================================
+   📱 MOBILE LARGE (max-width: 768px)
+================================================ */
+@media (max-width: 768px) {
+
+  .home-section-title {
+    font-size: 18px;
+    margin: 22px 0 12px;
+  }
+
+  .home-circle-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .home-circle-card img {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+  }
+
+  .home-circle-card p {
+    font-size: 12px;
+  }
+}
+
+
+
+/* ===============================================
+   📱 MOBILE SMALL (max-width: 480px)
+================================================ */
+@media (max-width: 480px) {
+
+  .home-section-title {
+    font-size: 16px;
+    margin: 20px 0 10px;
+  }
+
+  .home-circle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .home-circle-card img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .home-circle-card p {
+    font-size: 11px;
+  }
+}

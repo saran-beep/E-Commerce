@@ -2,6 +2,11 @@ import "../styles/Header.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaSearch, FaShoppingCart, FaUser, FaMapMarkerAlt, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+// import Cate from "./components/Cate";
+
+
+import logo from "../assets/stacklylogo.jpeg";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -32,7 +37,7 @@ export default function Header() {
           </div>
 
           <div className="logo" onClick={handleLogoClick}>
-            LOGO
+          <img className="logoimg" src={logo} alt="logo" />
           </div>
         </div>
 
@@ -75,7 +80,9 @@ export default function Header() {
 
       {/* Bottom Navigation */}
       <nav className={`bottom-nav ${menuOpen ? "open" : ""}`}>
-        <a href="#">All Products</a>
+        {/* <Cate/> */}
+      <Link to="/Cate">All Products</Link>
+
         <a href="#">Today's Deal</a>
         <a href="#">Mobiles</a>
         <a href="#">Electronics</a>
