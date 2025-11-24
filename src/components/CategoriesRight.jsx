@@ -1,6 +1,13 @@
 import React from "react";
+
 import Fashion from "../components/FashionPage";
 import Homestore from "../components/Homestore";
+import BpCategories from "../components/bpCategories";
+import SmartGadgetsRight from "../components/SmartGadgetsRight";
+import ElectronicsRight from "../components/ElectronicsRight";
+import MobileRight from "../components/MobileRight";
+import GiftCardsRight from "../components/GiftCardsRight";
+import ToysRight from "../components/ToysRight";
 
 /* Popular Images */
 import winter from "../assets/popular/winter.png";
@@ -31,14 +38,25 @@ const triedImages = [
 ];
 
 export default function CategoriesRight({ active }) {
-  if (active === "Home")
-   return <Homestore/>
+  // MAP LEFT MENU KEYS TO RIGHT SIDE COMPONENTS
+  const pageMap = {
+    "Home": <Homestore />,
+    "Fashion": <Fashion />,
+    "Smart Gadgets": <SmartGadgetsRight />,
+    "Beauty & Personal care": <BpCategories />,
+    "Toys & Books": <ToysRight />,
+    "Electronics" : <ElectronicsRight />,
+    "Mobiles" : <MobileRight />,
+    "Gift cards" : <GiftCardsRight />
+  };
 
-  if (active === "Fashion")
-   return <Fashion/>
+  // If key exists, load the right component
+  if (pageMap[active]) return pageMap[active];
 
+  // Default content (For You, Toys, Electronics, etc.)
   return (
     <div className="right-container">
+
       {/* Popular Store */}
       <div className="popular-section">
         <h3>Popular Store</h3>
@@ -64,7 +82,6 @@ export default function CategoriesRight({ active }) {
           {recentImages.map((src, index) => (
             <div key={index} className="recent-card">
               <img src={src} className="recent-img" alt={`recent-${index}`} />
-              {/* <p>Item {index + 1}</p> */}
             </div>
           ))}
 
@@ -88,6 +105,7 @@ export default function CategoriesRight({ active }) {
           ))}
         </div>
       </div>
+
     </div>
   );
 }

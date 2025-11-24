@@ -1,0 +1,85 @@
+.mob-wrapper {
+  width: 100%;
+  padding: 25px 35px;
+  /* background: #f3efe7; same beige background */
+}
+
+/* Banner */
+.mob-banner {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+/* Title */
+.mob-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c2c2c;
+}
+
+/* Sub Title */
+.mob-sub {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+  color: #333;
+}
+
+/* Grid */
+.mob-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 10px;
+}
+
+/* Card */
+.mob-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    cursor: pointer;
+
+}
+/* .mob-item:hover {
+} */
+
+
+.mob-item span {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Circular Brand Icon */
+.mob-icon {
+  width: 85px;
+  height: 85px;
+  /* background: #fff; */
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mob-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mob-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .mob-icon {
+    width: 70px;
+    height: 70px;
+  }
+}

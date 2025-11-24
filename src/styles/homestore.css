@@ -33,9 +33,9 @@
   height: 95px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #d8d2c8;
+  /* border: 2px solid #d8d2c8; */
   padding: 5px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .home-circle-card p {
@@ -95,9 +95,9 @@
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #d8d2c8;
+  /* border: 2px solid #d8d2c8; */
   padding: 6px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .home-circle-card p {

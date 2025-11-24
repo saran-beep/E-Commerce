@@ -1,0 +1,84 @@
+.sg-wrapper {
+  width: 100%;
+  padding: 25px 35px;
+  /* background: #f3efe7; Figma beige */
+}
+
+/* Banner */
+.sg-banner {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* Main Title */
+.sg-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c2c2c;
+}
+
+/* Section Subtitle */
+.sg-sub {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 20px;
+  color: #333;
+}
+
+/* Grid layout */
+.sg-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 10px;
+}
+
+/* Individual item */
+.sg-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sg-item span {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Circle icon */
+.sg-icon {
+  width: 125px;
+  height: 125px;
+  /* border-radius: 50%; */
+  /* background: #ffffff; */
+  padding: 10px;
+  object-fit: contain;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .sg-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sg-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sg-icon {
+    width: 65px;
+    height: 65px;
+  }
+}

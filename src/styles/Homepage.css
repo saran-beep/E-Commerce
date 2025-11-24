@@ -106,6 +106,10 @@
   margin: 0;
 }
 
+.homepage-content {
+  margin-left: 420px;   /* must be more than sidebar width */
+  padding: 20px;
+}
 
 .category-card a {
   display: inline-block;

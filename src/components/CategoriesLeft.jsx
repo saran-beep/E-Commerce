@@ -2,14 +2,14 @@ import React from "react";
 
 /* LEFT Category Images */
 import foryou from "../assets/left/shop.png";
-import homeImg from "../assets/left/shop.png";
-import fashionImg from "../assets/left/shop.png";
-import smart from "../assets/left/shop.png";
-import beauty from "../assets/left/shop.png";
-import toys from "../assets/left/shop.png";
-import electronics from "../assets/left/shop.png";
-import mobiles from "../assets/left/shop.png";
-import giftcards from "../assets/left/shop.png";
+import homeImg from "../assets/left/home.png";
+import fashionImg from "../assets/left/fashion.png";
+import smart from "../assets/left/tech.png";
+import beauty from "../assets/left/bp.png";
+import toys from "../assets/left/toy.png";
+import electronics from "../assets/left/smart.png";
+import mobiles from "../assets/left/mobile.png";
+import giftcards from "../assets/left/gift.png";
 
 const items = [
   { key: "For You", img: foryou },

@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 
-import "./../styles/categories.css";
-import "./../styles/leftCategories.css";
-import "./../styles/rightCategories.css";
+import "../styles/categories.css";
+import "../styles/leftCategories.css";
+import "../styles/rightCategories.css";
+import "../styles/bpCategories.css";
+import "../styles/SmartGadgetsRight.css";
+import "../styles/ElectronicsRight.css"
+import "../styles/MobileRight.css"
+import "../styles/GiftCardsRight.css"
 
 import Subheader from "./Subheader";
 import CategoriesLeft from "./CategoriesLeft";
